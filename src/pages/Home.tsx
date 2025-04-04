@@ -1,5 +1,5 @@
 //done by mhmd attwi
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Typography, Box, Paper, useMediaQuery, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -13,6 +13,32 @@ const Home = () => {
   
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  // Force images to load on component mount
+  useEffect(() => {
+    const preloadImages = () => {
+      const imageUrls = [
+        '/2lof/images/Logo.jpeg',
+        '/2lof/images/btclogo.jpg'
+      ];
+      
+      let loadedCount = 0;
+      
+      imageUrls.forEach(url => {
+        const img = new Image();
+        img.onload = () => {
+          loadedCount++;
+          if (loadedCount === imageUrls.length) {
+            setImagesLoaded(true);
+          }
+        };
+        img.src = url;
+      });
+    };
+    
+    preloadImages();
+  }, []);
 
   return (
     <Container maxWidth="lg">
@@ -126,6 +152,10 @@ const Home = () => {
                         objectFit: 'contain',
                         padding: '5px'
                       }}
+                      onError={(e) => {
+                        console.error('Error loading logo:', e);
+                        e.currentTarget.src = 'https://via.placeholder.com/120x120?text=Logo';
+                      }}
                     />
                   </motion.div>
                   
@@ -220,6 +250,10 @@ const Home = () => {
                         objectFit: 'contain',
                         padding: '5px'
                       }}
+                      onError={(e) => {
+                        console.error('Error loading BTC logo:', e);
+                        e.currentTarget.src = 'https://via.placeholder.com/120x120?text=BTC';
+                      }}
                     />
                   </motion.div>
                 </Box>
@@ -245,6 +279,9 @@ const Home = () => {
                       objectFit: 'cover',
                       maxWidth: '100%',
                       maxHeight: '100%'
+                    }}
+                    onError={(e) => {
+                      console.error('Error loading video:', e);
                     }}
                   >
                     <source src="/2lof/videos/partnership.mp4" type="video/mp4" />
