@@ -75,3 +75,36 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 For any inquiries, please contact us at info@2linesofjoy.com
+
+## Development
+
+To run the development server:
+
+```bash
+npm install
+npm run dev
+```
+
+## Deployment
+
+This project is configured to deploy to GitHub Pages using GitHub Actions.
+
+### GitHub Pages Setup
+
+1. Go to your repository settings
+2. Navigate to "Pages" in the sidebar
+3. Under "Source", select "Deploy from a branch"
+4. Select the "gh-pages" branch and "/ (root)" folder
+5. Click "Save"
+
+### Manual Deployment
+
+If you need to deploy manually:
+
+```bash
+npm run build
+```
+
+Then push the contents of the `dist` folder to the `gh-pages` branch.
+
+## done by mhmd attwi

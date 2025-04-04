@@ -58,7 +58,19 @@ const Header = () => {
                   alt="2 Lines of Joy Logo"
                   sx={{
                     height: 50,
+                    width: 50,
                     mr: 2,
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                    border: '2px solid',
+                    borderColor: 'primary.main',
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                    transition: 'all 0.3s ease',
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                      boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                      borderColor: 'primary.dark',
+                    }
                   }}
                 />
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>

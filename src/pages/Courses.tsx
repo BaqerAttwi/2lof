@@ -218,7 +218,7 @@ const Courses = () => {
         {/* Flyers Section */}
         <Box sx={{ mt: 8 }}>
           <Typography variant="h4" gutterBottom align="center">
-            Course Flyers
+            Courses 
           </Typography>
           <Box sx={{ 
             display: 'grid', 
