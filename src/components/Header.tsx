@@ -13,6 +13,7 @@ const Header = () => {
   const menuItems = [
     { text: 'Home', path: '/' },
     { text: 'Courses', path: '/courses' },
+    { text: 'Vision', path: '/vision' },
     { text: 'Contact', path: '/contact' },
   ];
 
@@ -49,18 +50,22 @@ const Header = () => {
           transition={{ duration: 0.5 }}
         >
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box
-              component="img"
-              src="/2lof/images/Logo.jpeg"
-              alt="2 Lines of Joy Logo"
-              sx={{
-                height: 50,
-                mr: 2,
-              }}
-            />
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              2 Lines of Joy
-            </Typography>
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <Box
+                  component="img"
+                  src="/2lof/images/Logo.jpeg"
+                  alt="2 Lines of Joy Logo"
+                  sx={{
+                    height: 50,
+                    mr: 2,
+                  }}
+                />
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  2 Lines of Joy
+                </Typography>
+              </Box>
+            </Link>
           </Box>
         </motion.div>
 

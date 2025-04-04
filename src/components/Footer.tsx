@@ -1,6 +1,7 @@
 //done by mhmd attwi
 import React from 'react';
-import { Box, Container, Typography, Link, IconButton } from '@mui/material';
+import { Box, Container, Typography, IconButton } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -109,18 +110,18 @@ const Footer = () => {
               <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>
                 Quick Links
               </Typography>
-              <Link href="/" color="inherit" display="block" sx={{ mb: 1 }}>
+              <RouterLink to="/" style={{ color: 'white', textDecoration: 'none', display: 'block', marginBottom: '8px' }}>
                 Home
-              </Link>
-              <Link href="/courses" color="inherit" display="block" sx={{ mb: 1 }}>
+              </RouterLink>
+              <RouterLink to="/courses" style={{ color: 'white', textDecoration: 'none', display: 'block', marginBottom: '8px' }}>
                 Courses
-              </Link>
-              <Link href="/vision" color="inherit" display="block" sx={{ mb: 1 }}>
+              </RouterLink>
+              <RouterLink to="/vision" style={{ color: 'white', textDecoration: 'none', display: 'block', marginBottom: '8px' }}>
                 Vision
-              </Link>
-              <Link href="/contact" color="inherit" display="block" sx={{ mb: 1 }}>
+              </RouterLink>
+              <RouterLink to="/contact" style={{ color: 'white', textDecoration: 'none', display: 'block', marginBottom: '8px' }}>
                 Contact
-              </Link>
+              </RouterLink>
             </motion.div>
           </Box>
           <Box sx={{ flex: { xs: '1 1 100%', sm: '1 1 33.333%' } }}>
