@@ -1,6 +1,6 @@
 //done by mhmd attwi
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -81,7 +81,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename="/2lof">
         <div className="App">
           <Header />
           <Routes>
@@ -89,6 +89,7 @@ function App() {
             <Route path="/courses" element={<Courses />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/vision" element={<Vision />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Footer />
         </div>
