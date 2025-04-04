@@ -118,7 +118,7 @@ const Home = () => {
                   >
                     <Box
                       component="img"
-                      src="/images/Logo.jpeg"
+                      src="/2lof/images/Logo.jpeg"
                       alt="2 Lines of Joy Logo"
                       sx={{
                         height: '100%',
@@ -212,7 +212,7 @@ const Home = () => {
                   >
                     <Box
                       component="img"
-                      src="/images/btclogo.jpg"
+                      src="/2lof/images/btclogo.jpg"
                       alt="BTC Logo"
                       sx={{
                         height: '100%',
@@ -247,7 +247,7 @@ const Home = () => {
                       maxHeight: '100%'
                     }}
                   >
-                    <source src="/videos/partnership.mp4" type="video/mp4" />
+                    <source src="/2lof/videos/partnership.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </Box>

@@ -51,7 +51,7 @@ const Header = () => {
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Box
               component="img"
-              src="/images/Logo.jpeg"
+              src="/2lof/images/Logo.jpeg"
               alt="2 Lines of Joy Logo"
               sx={{
                 height: 50,

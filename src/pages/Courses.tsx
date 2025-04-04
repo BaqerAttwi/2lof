@@ -8,31 +8,31 @@ const courses = [
   {
     title: 'What we offer',
     description: 'What we offer',
-    image: '/flyers/flyer-1.jpeg',
+    image: '/2lof/flyers/flyer-1.jpeg',
   },
   {
     title: 'English courses',
     description: 'English courses',
-    image: '/flyers/flyer-2.jpeg',
+    image: '/2lof/flyers/flyer-2.jpeg',
   },
   {
     title: 'Shadow teacher training',
     description: 'Shadow teacher training',
-    image: '/flyers/flyer-3.jpeg',
+    image: '/2lof/flyers/flyer-3.jpeg',
   },
 ];
 
 const flyers = [
-  { title: 'What we offer', image: '/flyers/flyer-1.jpeg' },
-  { title: 'English courses', image: '/flyers/flyer-2.jpeg' },
-  { title: 'Shadow teacher training', image: '/flyers/flyer-3.jpeg' },
-  { title: 'Special Needs Support ', image: '/flyers/flyer-4.jpeg' },
+  { title: 'What we offer', image: '/2lof/flyers/flyer-1.jpeg' },
+  { title: 'English courses', image: '/2lof/flyers/flyer-2.jpeg' },
+  { title: 'Shadow teacher training', image: '/2lof/flyers/flyer-3.jpeg' },
+  { title: 'Special Needs Support ', image: '/2lof/flyers/flyer-4.jpeg' },
 ];
 
 const examHelpVideos = [
-  { title: 'Official Exam Support', video: 'videos/Official-Exam-Support.mp4' },
-  { title: 'After-School  Support', video: 'videos/afterschool.mp4' },
-  { title: 'Exam Support', video: 'videos/Examsupport.mp4' },
+  { title: 'Official Exam Support', video: '/2lof/videos/Official-Exam-Support.mp4' },
+  { title: 'After-School  Support', video: '/2lof/videos/afterschool.mp4' },
+  { title: 'Exam Support', video: '/2lof/videos/Examsupport.mp4' },
 ];
 
 const Courses = () => {
